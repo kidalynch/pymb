@@ -1,0 +1,120 @@
+body {
+	color: $grey5;
+	font-family: $roboto;
+	line-height: 26px;
+}
+
+h1, h2, h3 {
+	font-family: $roboto-slab;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 28px;
+	line-height: 38px;
+	&.xl {
+		font-size: 30px;
+	}
+}
+h2 {
+	font-size: 25px;
+	line-height: 30px;
+}
+h3 {
+	font-size: 22px;
+	line-height: 26px;
+}
+h4 {
+	font-size: 17px;
+	line-height: 26px;
+}
+
+.strong {
+	font-weight: $f-bold;
+}
+.txt-blue {
+	color: $blue;
+}
+.txt-green {
+	color: $green;
+}
+.txt-red {
+	color: red;
+}
+.pay-ico {
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+a.help-link {
+	color: $grey8;
+	font-size: 14px;
+	
+	&:hover {
+		color: $grey5;
+	}
+}
+h3.qs {
+	color: $blue-dk;
+	font-weight: 700;
+	
+	&:before {
+		content: "Q: ";
+		font-weight: $fs-lt;
+		color: $blue;
+	}
+}
+.sm-lbl {
+	font-size: .875em;
+	font-weight: $f-reg;
+}
+small {
+	line-height: 1.5em;
+}
+.txt-lt {
+	color: $grey8;
+}
+
+@media (min-width: 576px) { 
+	h1 {
+		font-size: 38px;
+		line-height: 46px;
+		&.xl {
+		font-size: 42px;
+		line-height: 50px;
+		}
+	}
+}
+
+@media (min-width: 768px) { 
+	h1 {
+		font-size: 42px;
+		line-height: 52px;
+		&.xl {
+		font-size: 56px;
+		line-height: 66px;
+		}
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 42px;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+

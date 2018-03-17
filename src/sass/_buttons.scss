@@ -1,0 +1,62 @@
+.btn {
+	border-radius: 3px;
+}
+.btn-lg {
+	font-size: 1.125rem;
+	}
+.btn-xl {
+	padding: 20px 30px;
+	font-size: 20px;
+}
+.btn-sdw {
+	box-shadow: 0px 5px 19px 0px rgba(0,0,0,0.22);
+}
+a.btn-green,
+button.btn-green {
+	background: $green;
+	color: $white !important;
+	font-weight: 400;
+	font-family: $roboto;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	padding-left: 25px;
+	padding-right: 25px;
+	
+	&:hover,
+	&:active,
+	&:visited {
+		background: $green-dk;
+	}
+}
+
+.btn.btn-total {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid $greyd;
+	background: $white;
+	color: $grey5;
+	text-align: left;
+	border-radius: 0;
+	
+	&.opt-top {
+		border-bottom: 0;
+		border-radius: 3px 3px 0 0;
+	}
+	&.opt-bot {
+		border-radius: 0 0 3px 3px;
+	}
+	
+	&.active {
+		background: $lt-blue-3;
+	}
+	&:focus,
+	&.focus {
+		box-shadow: none;
+	}
+}
+
+@media (max-width: 576px) { 
+	.btn.btn-green.float-right {
+		width: 100%;;
+	}
+}

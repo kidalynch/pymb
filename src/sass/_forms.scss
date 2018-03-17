@@ -1,0 +1,33 @@
+.form-group {
+	label,
+	legend {
+		font-size: 13px;
+	}
+	label {
+		margin-bottom: 0;
+	}
+	.form-check-label {
+		font-size: 1rem;
+		color: $grey5;
+	}
+	.form-check-input {
+		margin-right: .2rem;
+	}
+	::placeholder  {
+		color: $greyb;
+	}
+}
+
+.pay-total {
+	
+	.form-check {
+		padding-left: 0;
+		.form-check-label {
+			padding-left: 36px;
+		}
+		.form-check-input {
+
+
+		}
+	}
+}
