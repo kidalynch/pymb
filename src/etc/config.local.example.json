@@ -1,0 +1,5 @@
+{
+  "open"  : "external",
+  "proxy" : "localhost.com/pymb",
+  "port"  : 8080
+}
