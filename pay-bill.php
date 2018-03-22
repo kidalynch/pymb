@@ -103,7 +103,7 @@
             <span class="sect-num">3</span>
             <h3>Billing & Payment</h3>
           </div>
-          <div class="pay-sect-body">
+          <div class="pay-sect-body last">
             <div class="row ">
               <div class="col-sm-6 bill-addy">
                 <div class="form-group required">

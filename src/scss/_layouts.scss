@@ -318,5 +318,14 @@ footer {
     }
 
   }
+
+	@media (max-width : 576px) {
+		.pay-sect-body {
+	       margin-bottom: 35px;
+	       &.last {
+		       margin-bottom: 20px;
+	       }
+		}
+	}
 }
 
