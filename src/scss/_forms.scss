@@ -149,8 +149,7 @@
         height        : 0;
         padding       : 15px;
         border        : 1px solid $greyd;
-        background    : $lt-blue-3;
-        border-bottom : none;
+        background    : $lt-blue-2;
       }
 
       .form-check-label {
@@ -159,7 +158,10 @@
           width   : 160px;
         }
       }
-
+	  .form-check-label.active {
+		border-radius: 0;
+		border-bottom: 0;  
+	  }
       .form-check-label.active + .form-check-extension {
         display : block;
         opacity : 1;
