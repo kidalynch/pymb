@@ -151,7 +151,7 @@
               </div>
             </div>
           </div>
-          <div class="container text-center">
+          <div class="container text-center px-0">
             <button type="submit" class="btn btn-green btn-xl mb-4 btn-submit-payment">
               <span class="label">Submit Payment</span>
               <span class="spinner">Processing...</span>

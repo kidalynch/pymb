@@ -189,3 +189,9 @@
     }
   }
 }
+@media (max-width : 576px) {
+	.btn-submit-payment {
+    width : 100%;
+    min-width: intrinsic;
+  }
+}
