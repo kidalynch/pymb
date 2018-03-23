@@ -1,0 +1,197 @@
+[data-toggle="buttons"] {
+  .form-check-label {
+    padding-left : 50px;
+
+    input[type="radio"], input[type="checkbox"] {
+      display : none !important;
+    }
+
+    &:before {
+      content       : '';
+      width         : $circleDiam;
+      height        : $circleDiam;
+      border        : 1px solid $greyd;
+      position      : absolute;
+      top           : $circleDiam - 2px; // 2ps borders
+      left          : 15px;
+      border-radius : $circleDiam;
+    }
+
+    &.active {
+      &:before {
+        background : $blue;
+      }
+
+      &:after {
+        content       : '';
+        width         : 8px;
+        height        : 8px;
+        position      : absolute;
+        top           : 24px;
+        left          : 21px;
+        border-radius : 8px;
+        background    : $white;
+      }
+    }
+  }
+}
+
+.spinner {
+  padding-left : $circleDiam + 8px;
+  position     : relative;
+
+  &:before, &:after {
+    content       : '';
+    border-radius : 50%;
+    position      : absolute;
+  }
+  &:before {
+    width            : $circleDiam;
+    height           : $circleDiam;
+    top              : 50%;
+    left             : 0;
+    background-color : $white;
+    border           : 1px solid $greyd;
+    transform        : translateY(-50%);
+  }
+  &:after {
+    top              : 13px;
+    left             : $rotatingCirclePosLeft;
+    background-color : $green-dk;
+    height           : $rotatingCircleDiam;
+    width            : $rotatingCircleDiam;
+    animation        : spin 1s linear infinite;
+    transform-origin : $innerCirclePos/2 + $rotatingCircleDiam;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform : rotate(360deg);
+  }
+}
+
+.form-group {
+  label,
+  legend {
+    font-size : 13px;
+  }
+  label {
+    margin-bottom : 0;
+  }
+  .form-check-label {
+    font-size : 1rem;
+    color     : $grey5;
+  }
+  .form-check-input {
+    margin-right : .2rem;
+  }
+  ::placeholder {
+    color : $greyb;
+  }
+
+  &.required {
+    label:after {
+      content : '*';
+      color   : $red;
+      padding : 0 3px;
+    }
+  }
+}
+
+.pay-total {
+  .form-check {
+    padding-left : 0;
+
+    &.form-check-extended-right {
+      position : relative;
+
+      .form-check-label {
+        padding-right : 40%;
+      }
+
+      .form-check-extension {
+        position  : absolute;
+        top       : 50%;
+        right     : 15px;
+        width     : calc(40% - 30px);
+        transform : translateY(-50%);
+        margin    : 0;
+
+        .currency-sign {
+          font-weight  : bold;
+          margin-right : 5px;
+        }
+
+        .price {
+          font-weight : bold;
+        }
+
+        .form-control {
+          border-radius : 0;
+          padding       : 5px;
+          line-height   : 1.15;
+        }
+      }
+
+    }
+  }
+}
+
+.bill-method {
+  .form-check {
+    padding-left : 0;
+
+    &.form-check-extended-panel {
+      .form-check-extension {
+        display       : none;
+        opacity       : 0;
+        height        : 0;
+        padding       : 15px;
+        border        : 1px solid $greyd;
+        background    : $lt-blue-2;
+      }
+
+      .form-check-label {
+        .ccards {
+          display : inline-block;
+          width   : 160px;
+        }
+      }
+	  .form-check-label.active {
+		border-radius: 0;
+		border-bottom: 0;  
+	  }
+      .form-check-label.active + .form-check-extension {
+        display : block;
+        opacity : 1;
+        height  : auto;
+      }
+    }
+  }
+}
+
+.btn-submit-payment {
+  position  : relative;
+  min-width : 290px;
+  height    : 72px;
+
+  .spinner {
+    display : none;
+  }
+
+  &[disabled] {
+    .spinner {
+      display : inline-block;
+    }
+    .label {
+      display : none;
+    }
+  }
+}
+@media (max-width : 576px) {
+	.btn-submit-payment {
+    width : 100%;
+    min-width: intrinsic;
+  }
+}

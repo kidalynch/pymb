@@ -9,17 +9,22 @@
   "author": "A Twelmeyer",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "animate.css": "^3.6.1",
+    "browser-sync": "^2.23.6",
     "gulp-autoprefixer": "^4.1.0",
-    "gulp-cssnano": "^2.1.2",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
     "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^2.6.4"
+    "gulp-sourcemaps": "^2.6.4",
+    "tether": "^1.4.3"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap4": "0.0.1-security",
-    "browser-sync": "^2.23.6",
     "fontawesome": "^4.7.2",
-    "jquery": "^3.3.1"
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1",
+    "js-offcanvas": "^1.2.2",
+    "wow.js": "^1.2.2"
   }
 }
