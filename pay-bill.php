@@ -147,7 +147,7 @@
 
               </div>
               <div class="col-sm-6 bill-method">
-			  	<?php include('pay-opt-cc.php'); ?>
+			  	<?php include('pay-opt-both.php'); ?>
               </div>
             </div>
           </div>
